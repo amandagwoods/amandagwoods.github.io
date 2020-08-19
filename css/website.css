@@ -2,19 +2,36 @@
     box-sizing: border-box;
 }
 body{
-    background-image: url("/image/Chiffon.png");
-
+    background-image: url("../image/Artboard 1.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #eee1d8;
 }
 ul{
     list-style: none;
     padding: 0;
     margin: 0;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     box-sizing: border-box;
 }
-nav a{
+
+nav > ul > li > a{
     text-decoration: none;
     color: #dea94a;
     padding: 1em;
+    font-size: 1.25em;
 }
+
+nav > ul > li > a:hover{
+    display: block;
+    text-decoration: none;
+    color: #eee1d8;
+    padding: 1em;
+    font-size: 1.25em;
+    background-color: #dea94a;
+    text-align: center;
+}
+
