@@ -9,7 +9,9 @@ body{
     background-attachment: fixed;
     background-size: cover;
     background-color: #eee1d8;
+    margin: 0;
 }
+/*----nav bar---*/
 ul{
     list-style: none;
     padding: 0;
@@ -19,14 +21,44 @@ ul{
     box-sizing: border-box;
 }
 
-nav > ul > li > a{
+#sideNav{
+    background-color: #dea94a !important;
     text-decoration: none;
-    color: #dea94a;
+    color: #eee1d8!important;
     padding: 1em;
     font-size: 1.25em;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left:0;
+    display: flex;
+    flex-direction: column;
+    width: 15em;
+    height: 100vh;
 }
 
-nav > ul > li > a:hover{
+.navbar-expand-lg .navbar-nav{
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    color: #eee1d8!important;;
+    font-size: 1.25em;
+    background-color: #dea94a;
+    text-align: center;
+}
+
+a{
+    color: #eee1d8!important;
+}
+#sideNav .navbar-brand .img-profile{
+    max-width:10em;
+    max-height: 10em;
+    border: .5em solid #eee1d8;
+
+}
+nav > ul > li > a{
     text-decoration: none;
     color: #eee1d8;
     padding: 1em;
@@ -34,6 +66,17 @@ nav > ul > li > a:hover{
     background-color: #dea94a;
     text-align: center;
 }
+
+nav > ul > li > a:hover{
+    text-decoration: none;
+    color: #eee1d8;
+    padding: 1em;
+    font-size: 1.25em;
+    background-color: #cbc9b9;
+    text-align: center;
+    border-radius: 5px;
+}
+/*---footer---*/
 footer{
     bottom: 0;
     width: 100%;
